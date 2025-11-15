@@ -1,5 +1,5 @@
 <template>
-    <div class="header" :style="{background: `url(@/assets/cat.jpg) left top / cover no-repeat` }">
+    <div class="header">
         <router-link v-for="item in nav" :to="item.path" :key="item.path">{{ item.title }}</router-link>
     </div>
 </template>
@@ -28,6 +28,7 @@ export default {
     text-align: right;
     background: #4F5DA2; // 5201314
     line-height: 50px;
+    background: url("@/assets/cat.jpg") left -260px / cover no-repeat;
   a{
       text-decoration: none;
       color: #fff;
